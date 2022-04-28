@@ -1,0 +1,129 @@
+*{
+    margin: 0 auto;
+    font-family: 'Paytone One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+/*  HEADER  */
+header{
+    background-image: url(https://images2.alphacoders.com/889/889376.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-title{
+    background-color: rgba(255, 255, 255, 0.409);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+h1{
+    color: aliceblue;
+}
+header p{
+    color: aliceblue;
+}
+header button{
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    height: 2rem;
+    width: 4rem;
+}
+    
+.btn-grad {background-image: linear-gradient(to right, #9e2020 0%, #EA384D  51%, #9e2020  100%)}
+.btn-grad {
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    margin-top: 0.5rem;
+    border: none;
+    height: 2rem;
+    width: 4rem;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*  SECTIONS */
+section{
+    width: 100%;
+}
+h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    size: 1.3rem;
+}
+.text-center{
+    text-align: center;
+}
+.color-w{
+    color: aliceblue;
+}
+/*  INFORMACION */
+.container-info{
+    padding: 1rem;
+    background: #9e2020;
+    height: 100%;
+    overflow: scroll;
+}
+.container-info::-webkit-scrollbar{
+    display: none;
+}
+/*  CULTURA Y TURISMO */
+.section-b{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container-culture{
+    padding: 1rem;
+    background: #cbc0c0;
+    overflow: scroll;
+}
+.container-culture::-webkit-scrollbar{
+    display: none;
+}
+.container-turismo{
+    padding: 1rem;
+    background: #cbc0c0;
+    overflow: scroll;
+}
+.container-turismo::-webkit-scrollbar{
+    display: none;
+}
+/*  GASTRONOMIA */
+.container-food{
+    padding: 1rem;
+    background: #9e2020;
+    overflow: scroll;
+}
+.container-food::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container-title{
+        margin: 1rem;
+        background-size: contain;
+    }
+    .section-b{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+    }
+}
